@@ -1,0 +1,29 @@
+###################################################
+#Author: Almir Candido                            #
+#Contact: https://br.linkedin.com/in/almircandido #
+#                                                 #
+#Ansible Version: 2.9                             #
+#                                                 #
+#Requisitos:                                      #
+#Install:                                         #
+#pip install dopy                                 #
+###################################################
+#Documentation about modules
+#https://docs.ansible.com/ansible/latest/modules/digital_ocean_domain_module
+#Digital Ocean create new domain
+
+---
+- hosts: localhost
+  gather_facts: no
+  vars:
+    API: xxxxxxxxxxxxxxxxxxxx #inform your token
+    DOMAIN: almircandido.com
+    IP: 200.200.200.20
+  tasks:
+    - name: Create new domain
+      digital_ocean_domain:
+        oauth_token: "{{ API }}"
+        state: present
+        name: "{{ DOMAIN }}"
+        ip: "{{ IP }}"
+...
