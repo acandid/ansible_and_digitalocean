@@ -4,7 +4,7 @@
 #                                                 #
 #Ansible Version: 2.9                             #
 #                                                 #
-#Requisitos:                                      #
+#Requirements:                                    #
 #Install:                                         #
 #pip install dopy                                 #
 ###################################################
