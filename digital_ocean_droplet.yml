@@ -44,7 +44,7 @@
 ########################################################
 
 #Documentation about modules
-#https://docs.ansible.com/ansible/latest/modules/digital_ocean_domain_module
+#https://docs.ansible.com/ansible/latest/modules/digital_ocean_droplet_module.html#digital-ocean-droplet-module
 #Digital Ocean create new Droplet
 
 ---
